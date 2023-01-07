@@ -1,25 +1,21 @@
-// Area of cirlce
 #include<stdio.h>
-
-float area(float rad){
-	float a = 3.14 * rad * rad;
-	return a;	
-}
-
-float cirumference(ind rad){
-`	
-
-}
-
-
-
 int main()
 {
-	float rad;
-	printf("Enter radius: ");
-	scanf("%f",&rad);
-	float a = area(rad);
-	printf("Area of Circle: %.2f \n",a);
+	int n;
+	printf("Enter the number of line to print : ");
+	scanf("%d",&n);
 	
+	for(int i=1;i<=n;i++)
+	{
+		for(int j=1;j<=n-i;j++)
+		{
+			printf(" ");
+		}
+		for(int j=1;j<=(2*i)-1;j++)
+		{
+			printf("%d", i);
+		}
+		printf("\n");
+	}
 	return 0;
 }
